@@ -3,9 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <title>p5.js example</title>
+    <title>Virtual Piano</title>
     <style> 
-        body {padding: 0; margin: 0;} 
+        @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap);
+        body, html {max-width: 1200px;}
+        body {padding: 0; margin: 0; font-family: 'Open Sans', sans-serif;} 
+        p {
+            font-size: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #desktopDisplay {
+            margin-left: 26%;
+            margin-right: auto;
+        }
+        @media only screen and (max-width: 600px) {
+            #desktopDisplay {
+                margin-left: 2%;
+            }
+        }
     </style>
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>
@@ -13,9 +31,10 @@
   </head>
   <body>
       <div id="desktopDisplay">
-        <p>hey whats up my name is jared and i never freakin learned how to read (sheet music)</p>
-        <p>press any key to see it represented on the staff!</p>
+        <p>hey what's up my name is jared i'm 19 and i never freakin learned how to read (sheet music)</p>
+        <h3>Press Any Piano Key To See Its Notation And Waveform!</h3>
       </div>
+      <div id="visualizerTest"></div>
       <div id="mobileDisplay"></div>
       <div id="testContainer"></div>
   </body>
