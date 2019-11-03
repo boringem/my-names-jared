@@ -1,5 +1,6 @@
 # my-names-jared
 A virtual keyboard made with p5.js to teach correlation between piano keys and notes on a staff. 
+The live demo: http://madelynvagle.me/my-names-jared/
 
 The repository name comes from this vine: https://www.youtube.com/watch?v=CqCCBohjaqA. 
 
@@ -19,4 +20,5 @@ data. Not only did p5.js meet the needs of the program, it offered potential to 
 
 ### Functionality / Issues
 need support for sharps and flats
-need to make layout more responsive/centered on larger screens. 
+need to make layout more responsive/centered on larger screens + tablet. 
+mobile vertical constraints 
