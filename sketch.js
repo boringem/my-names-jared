@@ -97,13 +97,6 @@ function setup() {
     strokeWeight(5);
     stroke(150);
     loadCanvas();
-    noteValue = notesList[i];
-    if(i < notesList.length) {
-    i++;
-    } 
-    if(i >= notesList.length) {
-      i=0;
-    }
     afft = new p5.FFT();
 }
 function draw() {
@@ -120,27 +113,17 @@ function draw() {
     }
     endShape();
 }
-function playNote(value) {
-    if(noteValue = value) {
-      console.log('success');
-    } 
-    if(noteValue != value) { 
-      console.log('fail');
-      alert('Fail');
-    }
-  }
   
 if(window.innerWidth > 992) {
 function mouseClicked() {
     let xPos = mouseX;
-    if(xPos >= 250 && xPos <= 950){
+    let yPos = mouseY;
+    if(xPos >= 250 && xPos <= 950 && yPos >= 250 && yPos <= 500){
     
     // you played a c!
     if(xPos > 250 && xPos < 350) {
       clear();
       setup();
-      notePlayed = 'C';
-      playNote(notePlayed);
       text('You played a C', 520, 225);
       afft.setInput(cmp3);
       fill(60, 60, 60);
@@ -149,6 +132,7 @@ function mouseClicked() {
       line(285, 215, 315, 215);
       cmp3.play();
     }
+
     // you played a d!
     else if(xPos > 350 && xPos < 450) {
       clear();
@@ -222,7 +206,6 @@ if(window.innerWidth < 992) {
     function touchStarted() {
         setup();
         let display = mouseX;
-       // text(display, 5, 10);
 
         if(display > 25 && display < 70) {
             text('You played a C!', 120, 55);
@@ -276,4 +259,3 @@ if(window.innerWidth < 992) {
         }
         }
     }
-
