@@ -265,7 +265,7 @@ if(window.innerWidth < 992) {
         if(display > 285 && display < 330) {
             text('You played a B!', 120, 55);
             fill(0, 0, 255);
-            ellipse(30, 140, 20, 20);
+            ellipse(330, 140, 20, 20);
             bmp3.play();
         }
         }
