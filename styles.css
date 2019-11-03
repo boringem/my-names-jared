@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+}
+header {
+    background-color: #6f00ff;
+    color: #fff;
+}
+
+#staff {
+    height: 20vh;
+    background: url('staff.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10vh;
+    margin-top: 3vh;
+}
+
+ul {
+    list-style: none;
+}
+
+#keys {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.whiteKey {
+    width: 45vw;
+    height: 55vh;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #333;
+    border-width: thin;
+    z-index: -1;
+}
+
+.blackKey {
+    margin: 0 -8px 0 -10px;
+    width: 8vw;
+    box-shadow: 0px 4px 6px #333;
+    height: 35vh;
+    background: #333;
+    z-index: 10;
+}
+
+.green {
+    box-shadow: 15px 15px 15px #000;
+}
