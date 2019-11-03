@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <EditTextPreference
+     android:key="full_name"
+     android:title="Name"
+     android:summary="Enter Your Complete Name"
+     android:dialogTitle="Your Name"
+     android:dialogMessage="Enter Your Complete Name"
+     android:defaultValue=""
+     android:inputType="textCapWords"/>
+
+    <EditTextPreference
+     android:key="email_address"
+     android:title="Email Address"
+     android:summary="Enter Your Email Address"
+     android:dialogTitle="Enter Your Email Address"
+     android:dialogMessage="Enter Your Email Address"
+     android:defaultValue=" "
+     android:inputType="textEmailAddress"/>
+
+ <CheckBoxPreference
+     android:key="pref_sync"
+     android:title="@string/sync_pref_summary"
+     android:defaultValue="true"/>
+
+ <ListPreference
+     android:key="pref_sync_connection_type"
+     android:title="@string/pref_syncConnectionType"
+     android:entries="@array/pref_syncConnectionType_entries"
+     android:entryValues="@array/pref_syncConnectionType_values"
+     android:defaultValue="@string/pref_syncConnectionType_default_value"
+     android:summary="@string/pref_syncConnectionType_summary"/>
+
+<CheckBoxPreference
+    android:key="perform_sync"
+    android:summary="Enable or disable data sync"
+    android:title="Enable Auto Sync"
+    android:defaultValue="true"/>
+
+<ListPreference
+    android:key="sync_interval"
+    android:title="Sync interval"
+    android:summary="Define how often sync will be performed"
+    android:defaultValue="1000"
+    android:dependency="perform_sync"/>
+
+</PreferenceScreen>
