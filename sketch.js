@@ -125,6 +125,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played a C', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(cmp3);
       fill(60, 60, 60);
       ellipse(300, 215, 20, 20);
@@ -138,6 +139,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played a D', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(dmp3);
       fill(60, 60, 60);
       ellipse(400, 203, 20, 20);
@@ -149,6 +151,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played an E!', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(emp3);
       fill(60, 60, 60);
       ellipse(500, 190, 20, 20);
@@ -160,6 +163,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played an F!', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(fmp3);
       fill(60, 60, 60);
       ellipse(600, 175, 20, 20);
@@ -171,6 +175,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played a G!', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(gmp3);
       fill(60, 60, 60);
       ellipse(700, 160, 20, 20);
@@ -182,6 +187,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played an A!', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(amp3);
       fill(60, 60, 60);
       ellipse(800, 145, 20, 20);
@@ -193,6 +199,7 @@ function mouseClicked() {
       clear();
       setup();
       text('You played a B!', 520, 225);
+      text('Try playing songs like Chopsticks, Mary Had A Little Lamb, and Twinkle Twinkle Little Star', 250, 550);
       afft.setInput(bmp3);
       fill(60, 60, 60);
       ellipse(900, 130, 20, 20);
