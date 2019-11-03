@@ -34,11 +34,13 @@ function preload() {
 
   function loadCanvas() {
     if(window.innerWidth > 992) {
-        line(200, 70, 1000, 70); //1
-        line(200, 100, 1000, 100); //2
-        line(200, 130, 1000, 130); //3
-        line(200, 160, 1000, 160); //4
-        line(200, 190, 1000, 190); //5
+      let x1 = width / 8;
+      let x2 = width - (width/8);
+        line(x1, 70, x2, 70); //1
+        line(x1, 100, x2, 100); //2
+        line(x1, 130, x2, 130); //3
+        line(x1, 160, x2, 160); //4
+        line(x1, 190, x2, 190); //5
   
         stroke(30, 30, 30);
         strokeWeight(2);
