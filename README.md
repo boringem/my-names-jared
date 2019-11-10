@@ -2,10 +2,6 @@
 A virtual keyboard made with p5.js to teach correlation between piano keys and notes on a staff. 
 The live demo: http://madelynvagle.me/my-names-jared/
 
-The repository name comes from this vine: https://www.youtube.com/watch?v=CqCCBohjaqA. 
-
-Because we're teaching people to read sheet music. 
-
 The web version is implemented through the sketch.js file and index.html. The Android app progress is under the /src and /lib directories. 
 
 # initial goals 
